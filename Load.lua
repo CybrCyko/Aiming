@@ -13,7 +13,7 @@ function(Type, PatchName)
     end
 
     -- // Vars
-    local PatchFormat = "https://raw.githubusercontent.com/CybrCyko/Aiming/GamePatches/%s/%s.lua"
+    local PatchFormat = "https://raw.githubusercontent.com/CybrCyko/Aiming/main/GamePatches/%s/%s.lua"
 
     -- // Attempt to load a patch for the game
     local Success, _ = pcall(function()
@@ -23,7 +23,7 @@ function(Type, PatchName)
 
     -- // Load default otherwise
     if (not Success) then
-        local ModuleFormat = "https://raw.githubusercontent.com/CybrCyko/Aiming/%s.lua"
+        local ModuleFormat = "https://raw.githubusercontent.com/CybrCyko/Aiming/main/%s.lua"
         loadstring(game:HttpGet(ModuleFormat:format(Type)))()
     end
 
