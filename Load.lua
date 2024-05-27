@@ -1,4 +1,4 @@
-return function(Type, PatchName)
+function(Type, PatchName)
     -- // Failsafing
     do
         -- // Valid Type
